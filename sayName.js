@@ -15,7 +15,7 @@
 
 //Now add a sayName method on your Person class that will alert the name of whatever Person instance called it.
 
-  Person.sayName = function(user) {
-	console.log(user.name);
+  Person.prototype.sayName = function() {
+	console.log(this.name);
 }
 

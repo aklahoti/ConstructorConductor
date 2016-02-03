@@ -15,3 +15,14 @@ function revStr(str) {
 }
 
 revStr("Hello");
+
+//or
+
+String.prototype.reverse = function() {
+    return this.split('').reverse().join('');
+}
+
+var myString = 'hello';
+myString.reverse();
+
+//reverse property only works on Arrays
